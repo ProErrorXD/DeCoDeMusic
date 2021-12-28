@@ -16,7 +16,7 @@ from callsmusic import run
 from config import API_ID, API_HASH, BOT_TOKEN, BG_IMAGE, BOT_NAME, GROUP_SUPPORT, BOT_USERNAME, OWNER_NAME, \
     UPDATES_CHANNEL, UPSTREAM_REPO
 from helpers import filters
-from helpers.filters import command
+from helpers.filters import *
 
 
 response = requests.get(BG_IMAGE)
