@@ -7,6 +7,7 @@ from pytgcalls import idle
 from ProMusic.start import _human_time_duration, START_TIME
 from callsmusic import run
 from ProMusic import __version__
+from pyrogram import Client, filters
 from pyrogram import Client as Bot, Client
 from pyrogram import Client as Bot
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
