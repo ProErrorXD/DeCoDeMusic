@@ -20,7 +20,6 @@ from helpers.filters import command
 
 
 response = requests.get(BG_IMAGE)
-@@ -21,6 +34,91 @@
 
 print(f"[INFO]: PRO MUSIC v{__version__} STARTED !")
 
