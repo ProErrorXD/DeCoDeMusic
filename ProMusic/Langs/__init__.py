@@ -10,14 +10,13 @@ __version__ = "{version_info[0]}.{version_info[1]}"
 
 class LangsFormatMap(dict):
     def __getitem__(self, key):
-        if key in self:
-            self.used.append(key)
-            if type(self.get(key)) == str:
-                return html.escape(self.get(key)) if self.escape_html else self.get(key)
-            else:
-                return self.get(key)
-        else:
+        if key not in self:
             return self.__missing__(key)
+        self.used.append(key)
+        if type(self.get(key)) == str:
+            return html.escape(self.get(key)) if self.escape_html else self.get(key)
+        else:
+            return self.get(key)
 
     def __missing__(self, key):
         if self.debug:

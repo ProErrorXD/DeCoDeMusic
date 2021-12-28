@@ -61,21 +61,32 @@ async def start_private(client: Client, message: Message):
                 [
                     InlineKeyboardButton(
                         "➕ Add me to a Group ➕",
-                        url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
+                        url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
+                    ),
                 ],
                 [
-                    InlineKeyboardButton("📚 Commands", url=f"https://telegra.ph/PRO-MUSIC-COMMANDS-12-23"),
-                    InlineKeyboardButton("❤️ Donate", url=f"https://t.me/{OWNER_NAME}"),
+                    InlineKeyboardButton(
+                        "📚 Commands",
+                        url='https://telegra.ph/PRO-MUSIC-COMMANDS-12-23',
+                    ),
+                    InlineKeyboardButton(
+                        "❤️ Donate", url=f"https://t.me/{OWNER_NAME}"
+                    ),
                 ],
                 [
                     InlineKeyboardButton(
                         "👥 Official Group", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "📣 Official Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "📣 Official Channel",
+                        url=f"https://t.me/{UPDATES_CHANNEL}",
+                    ),
+                ],
+                [
+                    InlineKeyboardButton(
+                        "🌐 WebSite", url='http://decodebugs.netlify.app/'
                     )
                 ],
-                [InlineKeyboardButton("🌐 WebSite", url=f"http://decodebugs.netlify.app/")],
                 [
                     InlineKeyboardButton(
                         "🏳‍🌈 Languages", callback_data="get_languages"
