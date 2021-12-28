@@ -78,7 +78,7 @@ async def start_private(client: Client, message: Message):
                 [InlineKeyboardButton("🌐 WebSite", url=f"http://decodebugs.netlify.app/")],
                 [
                     InlineKeyboardButton(
-                        "🏳‍🌈 Languages", url="https://github.com/TeamDeeCode/ProMusic"
+                        "🏳‍🌈 Languages", callback_data="get_languages"
                     )
                 ],
             ]
